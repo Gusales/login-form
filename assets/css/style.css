@@ -39,9 +39,9 @@ header h1 {
   background: #151515;
 }
 
-.main__content .form__content {
+.main__content .forms_container .form__content {
   background: #f9f9f9;
-  width: clamp(100px, 60vw, 400px);
+  width: clamp(300px, 60vw, 400px);
   display: flex;
   flex-direction: column;
   align-items: center;
