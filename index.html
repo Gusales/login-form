@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <title>Login - DemoDay</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <main class="main__content">
+    <header>
+      <h1>Login - DemoDay</h1>
+    </header>
+    <div class="forms_container">
+      <form action="" class="form__content form__login" id="form-login">
+        <h2>Seja muito bem vindo!</h2>
+        <div class="input__control">
+          <label for="emailLogin">Email:</label>
+          <input type="email" placeholder="exemplo@email.com" id="emailLogin" required>
+        </div>
+        <div class="input__control">
+          <label for="loginPassword">Senha:</label>
+          <div class="input__password">
+            <input type="password" id="loginPassword" placeholder="******" required>
+
+            <button type="button" onclick="handleShowPassword('loginPassword')">
+              <i class="ph ph-eye icon-loginPassword"></i>
+            </button>
+          </div>
+          <a href="#" class="forgot__password">Esqueceu a senha</a>
+        </div>
+
+        <button type="submit" class="btn__login">Acessar</button>
+
+        <div class="form__actions">
+          <button type="button" class="btn__link" onclick="handleChangeForms()">Criar conta</button>
+        </div>
+      </form>
+
+      <form action="" class="form__content form__createAccount" id="create-Account" style="display: none;">
+        <h2>Faça parte da melhor equipe!</h2>
+        <div class="input__control">
+          <label for="emailLogin">Nome:</label>
+          <input type="text" placeholder="Seu Nome Completo" id="emailLogin" required>
+        </div>
+        <div class="input__control">
+          <label for="emailLogin">Email:</label>
+          <input type="email" placeholder="exemplo@email.com" id="emailLogin" required>
+        </div>
+        <div class="input__control">
+          <label for="createPassword">Senha:</label>
+          <div class="input__password">
+            <input type="password" id="createPassword" placeholder="******" required>
+
+            <button type="button" onclick="handleShowPassword('createPassword')">
+              <i class="ph ph-eye icon-createPassword"></i>
+            </button>
+          </div>
+        </div>
+        <div class="input__control">
+          <label for="confirmPassword">Confirmar senha:</label>
+          <div class="input__password">
+            <input type="password" id="confirmPassword" placeholder="******" required>
+
+            <button type="button" onclick="handleShowPassword('confirmPassword')">
+              <i class="ph ph-eye icon-confirmPassword"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn__login">Acessar</button>
+
+        <div class="form__actions">
+          <button type="button" class="btn__link" onclick="handleChangeForms()">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

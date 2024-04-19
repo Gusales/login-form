@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --red-350: #e21d1d;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  padding: .5rem;
+
+  text-align: center;
+  background: var(--red-350);
+}
+
+header h1 {
+  color: #f3f3f3;
+  text-shadow: 3px 2.8px #323030;
+}
+
+.main__content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #151515;
+}
+
+.main__content .form__content {
+  background: #f9f9f9;
+  width: clamp(100px, 60vw, 400px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-radius: 6px;
+}
+
+.main__content .form__content .input__control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main__content .form__content .input__control input {
+  border: 0;
+  outline: 1px solid #212020;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid var(--red-350);
+  }
+}
+
+.input__password {
+  position: relative;
+}
+
+.input__password button {
+  position: absolute;
+  z-index: 99;
+  right: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.35rem;
+  line-height: 0;
+
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.input__password input {
+  width: 100%;
+}
+
+.forgot__password {
+  margin-top: .25rem;
+}
+
+.btn__login {
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn__login,
+input {
+  padding: .5rem;
+}
+
+.form__actions {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__login {
+  background: var(--red-350);
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.15rem;
+
+  outline: 0;
+  border: 0;
+  transition: background 400ms;
+
+  &:hover {
+    background: #e15656;
+  }
+
+  &:hover {
+    outline: 2px solid var(--red-350);
+  }
+}
+
+.btn__link {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+
+  text-decoration: underline;
+  font-size: .95rem;
+}
